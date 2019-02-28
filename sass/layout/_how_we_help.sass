@@ -1,0 +1,54 @@
+#how-we-help
+    height: 100vh
+    position: relative
+    background: $white
+    .container
+        z-index: 8888
+        position: relative
+        padding: 2.7em
+        .heading-container
+            width: 56%
+            margin: 0 auto
+            margin-bottom: 4em
+            h2
+                margin-bottom: 1em
+            p
+                text-align: left
+        .cards-container
+            display: flex
+            width: 85%
+            margin: 0 auto
+            justify-content: space-between
+            height: 75vh
+            .card
+                border: 1px solid grey
+                flex: 1
+                height: auto
+                display: flex
+                flex-direction: column
+                padding: 2em 1.5em
+                &:first-of-type
+                    margin-right: 1.2em
+                &:last-of-type
+                    margin-left: 1.2em
+                h3
+                    margin-bottom: .5em
+                strong
+                    text-align: left
+                    width: 100%
+                    margin: 0
+                p
+                    margin-top: 1.5em
+#how-we-help::before
+    position: absolute 
+    content: ''
+    width: 100%
+    height: 100% 
+    background-color: inherit
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    transform-origin: top left
+    transform: skewY(-1.7deg)
+    z-index: 2

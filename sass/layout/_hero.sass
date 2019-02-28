@@ -1,0 +1,42 @@
+header
+    background-image: url('../img/hero.jpg')
+    background-color: rgba(35, 35, 35,.4)
+    background-blend-mode: multiply
+    background-size: cover
+    background-position-y: -1em
+    height: 83vh
+    z-index: -1
+    .main-nav
+        display: flex
+        height: 10vh
+        align-items: center
+        align-content: center
+        transition: background-color 100ms
+        &:hover
+            background-color: $main
+            opacity: 1
+        ul
+            display: flex
+            justify-content: center
+            flex: 3
+            padding: 0 4em
+            transform: translateY(-.2em)
+            li
+                margin-left: 3em
+        .logo
+            flex: 2
+            img
+                width: 53%
+                margin-top: .3em
+    .hero
+        height: 85%
+        text-align: left
+        padding: 6em 8em 
+        .hero-btn
+            margin-top: 3.8em
+    .grey-bg
+        background-color: $secondary
+        position: fixed
+        width: 100%
+        z-index: 9999
+        opacity: 1
