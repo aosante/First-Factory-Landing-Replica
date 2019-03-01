@@ -355,6 +355,11 @@ h2 {
   font-weight: 600;
   word-spacing: .05em; }
 
+#expertise h2 {
+  color: #232323;
+  font-weight: 600;
+  font-size: 1.8em; }
+
 h3 {
   color: #bc0807;
   font-family: "Montserrat", sans-serif;
@@ -373,6 +378,9 @@ p, strong {
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   text-align: left; }
+
+li {
+  font-family: "Raleway", sans-serif; }
 
 header {
   background-image: url("../img/hero.jpg");
@@ -472,6 +480,119 @@ header {
   transform-origin: top left;
   transform: skewY(-1.7deg);
   z-index: 2; }
+
+#expertise {
+  height: 100vh;
+  margin-top: 14em;
+  padding: 3em;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url("../img/our-expertise.jpg");
+  background-size: 100%;
+  background-position-y: 40%;
+  position: relative; }
+  #expertise .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); }
+    #expertise .container h2 {
+      margin-top: 2.5em; }
+    #expertise .container .skills-grid {
+      height: 70vh;
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      margin: 0 auto;
+      margin-top: 4em; }
+      #expertise .container .skills-grid .skill {
+        flex-grow: 1;
+        min-width: 25%; }
+        #expertise .container .skills-grid .skill h3 {
+          color: #232323;
+          margin-top: .8em; }
+        #expertise .container .skills-grid .skill h3:after {
+          all: unset; }
+        #expertise .container .skills-grid .skill img {
+          width: 3.3em; }
+        #expertise .container .skills-grid .skill ul {
+          margin-top: .5em; }
+      #expertise .container .skills-grid .bottom > * {
+        margin-top: 3em; }
+      #expertise .container .skills-grid .left {
+        padding-left: 5em; }
+      #expertise .container .skills-grid .right {
+        padding-right: 4em; }
+
+#ff-experience {
+  height: 100vh;
+  position: relative;
+  background: white; }
+  #ff-experience .container {
+    z-index: 8888;
+    position: relative;
+    padding: 4em; }
+    #ff-experience .container .heading-container {
+      width: 38%;
+      margin: 0 auto;
+      margin-bottom: 3em; }
+      #ff-experience .container .heading-container h2 {
+        margin-bottom: 1em; }
+      #ff-experience .container .heading-container p {
+        text-align: center;
+        margin-bottom: 1.5em; }
+    #ff-experience .container .cards-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 90%;
+      margin: 0 auto;
+      height: 55vh;
+      grid-gap: 2.5em; }
+      #ff-experience .container .cards-container .card {
+        border: 1px solid grey;
+        flex: 1;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 2em 1.5em; }
+        #ff-experience .container .cards-container .card h3 {
+          margin-bottom: 1em; }
+    #ff-experience .container .experience-btn {
+      margin-top: 2em; }
+
+#ff-experience::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top left;
+  transform: skewY(-1.3deg);
+  z-index: 2; }
+
+#ff-experience::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  top: 6em;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom right;
+  transform: skewY(-1.5deg);
+  z-index: 2; }
+
+#ff-image {
+  background: black;
+  height: 80vh;
+  margin-top: 3em; }
 
 .btn {
   background-color: #bc0807;
