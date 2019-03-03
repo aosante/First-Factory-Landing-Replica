@@ -379,6 +379,10 @@ p, strong {
   font-size: 1rem;
   text-align: left; }
 
+em {
+  font-family: "Raleway", sans-serif;
+  font-size: .9rem; }
+
 li {
   font-family: "Raleway", sans-serif; }
 
@@ -590,9 +594,97 @@ header {
   z-index: 2; }
 
 #ff-image {
-  background: black;
-  height: 80vh;
-  margin-top: 3em; }
+  background-image: url(../img/ff-divider.jpg);
+  height: 60vh;
+  margin-top: 3em;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1; }
+
+#trust-us {
+  padding: 2em;
+  height: auto;
+  position: relative;
+  z-index: 7777; }
+  #trust-us h2 {
+    margin: 2em; }
+  #trust-us h3 {
+    padding-bottom: .5em; }
+  #trust-us h3:after {
+    all: unset; }
+  #trust-us .container {
+    display: flex;
+    width: 87%;
+    margin: 0 auto;
+    height: 55vh; }
+    #trust-us .container .col {
+      width: 33.3334%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column; }
+      #trust-us .container .col .sub-col {
+        margin-bottom: 1.4em; }
+      #trust-us .container .col ul {
+        width: 70%;
+        margin: 0 auto; }
+    #trust-us .container .middle {
+      justify-content: flex-start;
+      padding-top: .8em; }
+
+#trust-us:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(2.3deg);
+  z-index: -1; }
+
+#testimonials {
+  background-color: #525152;
+  padding: 5em;
+  color: #fff; }
+  #testimonials h2.testimonials-title {
+    margin-bottom: 1.5em;
+    color: #fff; }
+  #testimonials .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.5em; }
+    #testimonials .container .quote {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0 auto; }
+      #testimonials .container .quote blockquote p {
+        padding: 1em;
+        display: flex;
+        align-items: center; }
+        #testimonials .container .quote blockquote p:before {
+          content: "\201C";
+          font-size: 2.7em;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          align-self: flex-start;
+          margin: 0;
+          margin-right: .3em;
+          transform: translateY(-0.6em); }
+        #testimonials .container .quote blockquote p:after {
+          content: "\201D";
+          margin-left: .3em;
+          align-self: flex-end;
+          font-size: 2.7em;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          transform: translateY(0.6em); }
+      #testimonials .container .quote .quote-auth {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
 
 .btn {
   background-color: #bc0807;
