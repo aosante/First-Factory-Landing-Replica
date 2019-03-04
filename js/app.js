@@ -1,5 +1,5 @@
 const nav = document.querySelector('.main-nav');
-window.addEventListener('scroll', addGreyBG);
+window.addEventListener('scroll', _.throttle(addGreyBG, 20));
 
 function addGreyBG() {
   if (window.scrollY > 5) {
